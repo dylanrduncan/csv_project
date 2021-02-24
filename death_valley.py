@@ -30,7 +30,7 @@ for row in csv_file:
     try:
         high = int(row[4])
         low = int(row[5])
-        converted_date = datetime.strptime(row[2], "%y-%m-%d")
+        converted_date = datetime.strptime(row[2], "%Y-%m-%d")
     except ValueError:
         print(f"Missing data for {converted_date}")
     else:
